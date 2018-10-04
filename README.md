@@ -39,9 +39,9 @@ Gradient-domain rendering framework must be prepared first.
 2. Build FeatureGenerator project and copy 'FeatureGeneration.lib' and 'cudart_static.lib' to dependencies folder of GPT
     - Copy into "(GPT_PATH)/dependencies/lib/x64_vc12"
     - 'cudart_static.lib' is located on "$(CUDA_PATH)/lib/x64"
-3. Unzip Feature_generation_dependencies_GPT.zip and extract it into GPT framework
-4. Copy feature generation source code into dependencies folder of GPT
+3. Copy feature source code in FeatureGenerator project (five code files) into dependencies folder of GPT
     - Copy into "(GPT_PATH)/dependencies/include/FeatureGenerator"
+4. Unzip feature_generation_dependencies.zip and overwrite it into GPT framework   
 5. Build gradient-domain path tracing
 
 ### Scene
@@ -54,7 +54,9 @@ Please add the following information to xml file of scene in order to run the fe
   /* --------------------- */
   /*  Original parameters  */
   /* --------------------- */
-  **<boolean name="reconstructFeature" value="true"/>**
+  <boolean name="reconstructL1" value="false"/>
+  <boolean name="reconstructL2" value="false"/>
+  <boolean name="reconstructFeature" value="true"/>
 <integrator/>
 ```
 
