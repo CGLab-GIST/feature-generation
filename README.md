@@ -76,7 +76,7 @@ If you use our code and paper, please check as below.
 
 
 ```
-@article{Jonghee18,
+@article{Back18,
   author = {Back, Jonghee and Yoon, Sung-Eui and Moon, Bochang},
   title = {Feature Generation for Adaptive Gradient-Domain Path Tracing},
   journal = {Computer Graphics Forum},
